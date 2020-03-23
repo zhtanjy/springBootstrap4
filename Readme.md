@@ -16,10 +16,11 @@ spring 引入通过maven引入bootstrap在页面上引入技巧
     <version>3.4.1</version>
 </dependency>
 <!-- 使用是在html中还再需要填写版本号，会自动添加 -->
-<dependency>
+<!-- 暂时发展只有引用webjars-locator-core 0.35 才能正确使用jquery的3.4.1版本出来。 -->
+<dependency><!--Webjars版本定位工具（前端）-->
     <groupId>org.webjars</groupId>
-    <artifactId>webjars-locator</artifactId>
-    <version>0.39</version>
+    <artifactId>webjars-locator-core</artifactId>
+    <version>0.35</version>
 </dependency>
 <!-- popper.js文件 -->
 <dependency>
